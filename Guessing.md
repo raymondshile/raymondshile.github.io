@@ -36,13 +36,6 @@ flowchart TD
                             J --> L --> Z --> C
                 G --> I --> X --> C
 ```
-Documentation: 
-In the above flowchart we create a control flow diagram for a random guessing game.
-Our program first generates a random value in range of A to B and then prompts 
-the user to input a number. This occurs at step C in our diagram after step B. 
-At step C we highlight the output message to the user and we highlight that the 
-input is a variable named "user Guess". In order to verify that the program is correct
-we then model a sequence of input validation that progressively test's the user's input value for different
-possible program fail cases. We added all major fail checks at Nodes G, J, M, and P
-The program reaches the END node in the graph if all of these fail checks pass, at which point 
-we can conclude that the only logical case left was that the user's input was the correct value.
+Documentation:
+The flowchart illustrates the control flow for a random guessing game. The program begins by generating a random number within the range of A to B. At step C, following step B, the program prompts the user to input a guess. This input is stored in a variable named userGuess, and at this stage, the corresponding output message is displayed to the user.
+To ensure the program functions correctly, the next section models a sequence of input validation checks. These tests verify the user's input against various potential failure cases, represented by nodes G, J, M, and P. If the input passes all these validation checks, the program proceeds to the END node. At this point, we conclude that the user's input matches the randomly generated number, as all other fail conditions have been ruled out.

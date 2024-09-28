@@ -36,7 +36,7 @@ flowchart TD
                             J --> L --> Z --> C
                 G --> I --> X --> C
 ```
-Documentation 
+Documentation: 
 In the above flowchart we create a control flow diagram for a random guessing game.
 Our program first generates a random value in range of A to B and then prompts 
 the user to input a number. This occurs at step C in our diagram after step B. 

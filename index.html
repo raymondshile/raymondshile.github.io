@@ -1,154 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Olashile | Cloud Infrastructure</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olashile | Cloud Infrastructure</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #1f2933;
+            text-align: center;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: 100px auto;
-      padding: 20px;
-    }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    h1, h2 {
-      color: #0b2f39;
-      text-align: center;
-    }
+        h1 {
+            color: #0b2f39;
+            margin-bottom: 10px;
+        }
 
-    p {
-      color: #333;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: center;
-    }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
 
-    .highlight {
-      color: #1ea6a1;
-      font-weight: bold;
-    }
+        .section-title {
+            margin-top: 40px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #0b2f39;
+        }
 
-    .section {
-      margin-top: 60px;
-    }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
-    }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            text-align: left;
+        }
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+        .card h3 {
+            margin-top: 0;
+            color: #0b2f39;
+        }
 
-    .card h3 {
-      margin-top: 0;
-      color: #0b2f39;
-    }
+        .skills {
+            margin-top: 20px;
+        }
 
-    .skills {
-      text-align: center;
-      margin-top: 20px;
-    }
+        .skill {
+            display: inline-block;
+            background-color: #1ea6a1;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 6px;
+            margin: 5px;
+            font-size: 14px;
+        }
 
-    .skills span {
-      display: inline-block;
-      background: #1ea6a1;
-      color: white;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    .cert {
-      text-align: center;
-      font-size: 16px;
-      color: #444;
-    }
-  </style>
+        @media (max-width: 700px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
+        
+        <h1>Hi, I'm Olashile 👋</h1>
 
-    <!-- INTRO -->
-    <h1>Hi, I'm Olashile 👋</h1>
-    <p>
-      Cloud Infrastructure student focused on <span class="highlight">Linux</span>, 
-      <span class="highlight">systems administration</span>, and 
-      <span class="highlight">enterprise technologies</span>.
-      <br><br>
-      Building real world solutions and selected for a 
-      <span class="highlight">Technical Support Engineer internship at Red Hat</span>.
-    </p>
+        <p>
+            Cloud Infrastructure student focused on Linux, systems administration, and enterprise technologies.
+        </p>
 
-    <!-- PROJECTS -->
-    <div class="section">
-      <h2>Projects</h2>
+        <p>
+            Building real-world solutions and selected for a Technical Support Engineer internship at Red Hat.
+        </p>
 
-      <div class="projects">
+        <div class="section-title">Projects</div>
 
-        <div class="card">
-          <h3>Proxmox Virtual Lab</h3>
-          <p>Built a virtualized lab environment using Proxmox to simulate real-world infrastructure, including VM deployment and networking.</p>
+        <div class="projects">
+            <div class="card">
+                <h3>Proxmox Virtual Lab</h3>
+                <p>
+                    Built a virtualized lab using Proxmox to simulate real-world infrastructure, including VM deployment and networking.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Windows Server & Active Directory</h3>
+                <p>
+                    Configured Active Directory, Group Policy, and domain services to manage users and enterprise environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Linux System Administration</h3>
+                <p>
+                    Managed Linux systems using CLI, including user management, services, and troubleshooting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Virtualization & Networking</h3>
+                <p>
+                    Used VirtualBox and VMware to build and manage virtual machines and networking environments.
+                </p>
+            </div>
         </div>
 
-        <div class="card">
-          <h3>Windows Server & Active Directory</h3>
-          <p>Configured Active Directory, Group Policy, and domain services to manage users, permissions, and enterprise environments.</p>
+        <div class="section-title">Skills</div>
+
+        <div class="skills">
+            <span class="skill">Linux</span>
+            <span class="skill">Windows Server</span>
+            <span class="skill">Active Directory</span>
+            <span class="skill">Proxmox</span>
+            <span class="skill">Virtualization</span>
+            <span class="skill">Networking</span>
+            <span class="skill">Cloud Fundamentals</span>
+            <span class="skill">Git</span>
+            <span class="skill">Python</span>
         </div>
 
-        <div class="card">
-          <h3>Linux System Administration</h3>
-          <p>Performed system management tasks using Linux CLI, including user management, services, and troubleshooting.</p>
-        </div>
-
-        <div class="card">
-          <h3>Virtualization & Networking</h3>
-          <p>Worked with VirtualBox and VMware to build and manage virtual machines and networking configurations.</p>
-        </div>
-
-      </div>
     </div>
-
-    <!-- SKILLS -->
-    <div class="section">
-      <h2>Skills</h2>
-
-      <div class="skills">
-        <span>Linux</span>
-        <span>Windows Server</span>
-        <span>Active Directory</span>
-        <span>Proxmox</span>
-        <span>Virtualization</span>
-        <span>Networking</span>
-        <span>Cloud Fundamentals</span>
-        <span>Git</span>
-        <span>Python</span>
-      </div>
-    </div>
-
-    <!-- CERTIFICATIONS -->
-    <div class="section">
-      <h2>Certifications</h2>
-      <p class="cert">
-        PCEP – Certified Entry-Level Python Programmer
-      </p>
-    </div>
-
-  </div>
 </body>
 </html>
- 
